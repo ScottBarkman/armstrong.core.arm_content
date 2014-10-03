@@ -21,7 +21,7 @@ class SimplePublicationMixin(models.Model):
 
     @property
     def is_published(self):
-        return self.pub_date <= datetime.now() \
+        return self.pub_date <= datetime.now \
             and self.pub_status == "P"
 
     class Meta:
